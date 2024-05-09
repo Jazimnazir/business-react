@@ -449,7 +449,7 @@ export const Home = () =>{
 
     </Box>
             </Grid>
-<p> hello world</p>
+
 
         </Grid>
     )
