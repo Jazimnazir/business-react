@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Typography, Paper, IconButton, InputBase, Divider, Box, Button, CardActions, CardContent, CardMedia, Card } from '@mui/material';
+import { Grid, Typography, Paper, IconButton, InputBase, Divider, Box, Button, CardActions, CardContent, CardMedia, Card, TextField } from '@mui/material';
 import valiant from "../assets/valiant.jpg"
 import business from "../assets/business.jpg"
 import img2 from "../assets/img2.png"
@@ -449,6 +449,51 @@ export const Home = () =>{
 
     </Box>
             </Grid>
+
+            <Grid sx={{paddingLeft:"70px "}}>
+                <Typography variant='h4' fontWeight='bolder'>
+                    <span style={{ color: 'rgb(54 192 204)' }}>Send us your enquiries</span> 
+                </Typography>
+                <Typography variant='h7' fontWeight='bolder'>
+                    Your Information
+                </Typography>
+                <Box sx={{marginTop:"21px"}}>
+                <TextField id="outlined-basic" label="First Name" variant="outlined" />
+                <TextField sx={{marginLeft:"31px"}} id="outlined-basic" label="Last Name" variant="outlined" />
+                </Box>
+               
+            </Grid>
+            <Box sx={{marginLeft:"70px"}}>
+            <TextField
+                    sx={{ marginTop: "21px", width: "40%" }}
+                    id="outlined-basic"
+                    label="Email Address"
+                    variant="outlined"
+                  />
+                  <Box>
+                   <TextField
+                    sx={{ marginTop: "21px", width: "40%" }}
+                    id="outlined-basic"
+                    label="Company"
+                    variant="outlined"
+                  />
+                  </Box>
+                    <TextField
+                    sx={{ marginTop: "21px", width: "40%" }}
+                    id="outlined-basic"
+                    label="Contact Number"
+                    variant="outlined"
+                  />
+                  <Box>
+                   <TextField
+                    sx={{ marginTop: "21px", width: "40%" }}
+                    id="outlined-basic"
+                    label="Country"
+                    variant="outlined"
+                  />
+                  </Box>
+                  </Box>
+                  
 
 
         </Grid>
